@@ -1,0 +1,32 @@
+
+<div class="jumbotron text-center">
+  <h2>Bienvenidos a Control de Condominios</h2>
+  <p>Para tener administracion eficiente de Edificios</p>
+   <% if !user_signed_in? %>
+     <p>
+       <%= link_to "Iniciar sesión", new_user_session_path, class: "btn btn-default btn-lg" %>
+       <%= link_to "Regístrate", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+     </p>
+    <% end %>
+</div>
+
+<div class="">
+  <% if user_signed_in? %>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <%= link_to "Copropietarios", copropietarios_path, class: "btn btn-default btn-lg" %>
+        </div>
+        <div class="col order-1">
+          <%= link_to "Inquilinos", copropietarios_path, class: "btn btn-default btn-lg" %>
+        </div>
+        <div class="col order-1">
+          <%= link_to "Edificios", copropietarios_path, class: "btn btn-default btn-lg" %>
+        </div>
+        <div class="col order-1">
+          <%= link_to "Departamentos", copropietarios_path, class: "btn btn-default btn-lg" %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

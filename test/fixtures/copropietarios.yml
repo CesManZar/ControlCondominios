@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_copropietario: MyString
+  nombres: MyString
+  cedula: MyString
+  fecha_nacimiento: 2019-10-15
+  actividad: MyString
+  direccion: MyString
+  telefono: MyString
+  celular: MyString
+  mail: MyString
+  id_edificio: MyString
+  id_departamento: MyString
+
+two:
+  id_copropietario: MyString
+  nombres: MyString
+  cedula: MyString
+  fecha_nacimiento: 2019-10-15
+  actividad: MyString
+  direccion: MyString
+  telefono: MyString
+  celular: MyString
+  mail: MyString
+  id_edificio: MyString
+  id_departamento: MyString

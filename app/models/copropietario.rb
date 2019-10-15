@@ -1,0 +1,2 @@
+class Copropietario < ApplicationRecord
+end

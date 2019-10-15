@@ -1,0 +1,2 @@
+module CopropietariosHelper
+end

@@ -1,0 +1,72 @@
+<%= form_with(model: copropietario, local: true) do |form| %>
+  <% if copropietario.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(copropietario.errors.count, "error") %> prohibited this copropietario from being saved:</h2>
+
+      <ul>
+        <% copropietario.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id_copropietario %>
+    <%= form.text_field :id_copropietario %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nombres %>
+    <%= form.text_field :nombres %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cedula %>
+    <%= form.text_field :cedula %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fecha_nacimiento %>
+    <%= form.date_select :fecha_nacimiento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :actividad %>
+    <%= form.text_field :actividad %>
+  </div>
+
+  <div class="field">
+    <%= form.label :direccion %>
+    <%= form.text_field :direccion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :telefono %>
+    <%= form.text_field :telefono %>
+  </div>
+
+  <div class="field">
+    <%= form.label :celular %>
+    <%= form.text_field :celular %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mail %>
+    <%= form.text_field :mail %>
+  </div>
+
+  <div class="field">
+    <%= form.label :id_edificio %>
+    <%= form.text_field :id_edificio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :id_departamento %>
+    <%= form.text_field :id_departamento %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

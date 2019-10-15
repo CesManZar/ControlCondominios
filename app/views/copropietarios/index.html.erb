@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Copropietarios</h1>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr class="">
+      <th scope="col">#</th>
+      <th scope="col">Id Copropietario</th>
+      <th scope="col">Nombres</th>
+      <th scope="col">Cedula</th>
+      <th scope="col">Fecha de Nacimiento</th>
+      <th scope="col">Actividad</th>
+      <th scope="col">Direccion</th>
+      <th scope="col">Telefono</th>
+      <th scope="col">Celular</th>
+      <th scope="col">Mail</th>
+      <th scope="col">Id_Edificio</th>
+      <th scope="col">Id_Departamento</th>
+      <th scope="col" colspan="3">Acciones </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @copropietarios.each do |copropietario| %>
+      <tr>
+        <th scope="row"><%=copropietario.id %></th>
+        <td><%= copropietario.id_copropietario %></td>
+        <td><%= copropietario.nombres %></td>
+        <td><%= copropietario.cedula %></td>
+        <td><%= copropietario.fecha_nacimiento %></td>
+        <td><%= copropietario.actividad %></td>
+        <td><%= copropietario.direccion %></td>
+        <td><%= copropietario.telefono %></td>
+        <td><%= copropietario.celular %></td>
+        <td><%= copropietario.mail %></td>
+        <td><%= copropietario.id_edificio %></td>
+        <td><%= copropietario.id_departamento %></td>
+        <td><%= link_to 'Show', copropietario %></td>
+        <td><%= link_to 'Edit', edit_copropietario_path(copropietario) %></td>
+        <td><%= link_to 'Destroy', copropietario, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'New Copropietario', new_copropietario_path %>

@@ -1,0 +1,36 @@
+@import 'bootstrap';
+// @import 'bootstrap-sprockets';
+
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/css?family=Oleo+Script);
+
+
+$body-bg:                          #fafafa !important;
+$font-family-sans-serif:           'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$navbar-height:                    70px;
+$navbar-default-bg:                white;
+$navbar-default-brand-color:       #166088;
+$navbar-default-link-color:        #166088;
+$brand-primary:                    #166088 !default;
+$jumbotron-bg:                     white;
+
+
+.navbar-default .navbar-brand {
+  font-family: 'Oleo Script', cursive;
+  font-size: 35px;
+  font-weight: bold;
+  color: #262626;
+}
+
+.navbar-nav {
+  font-weight: bold;
+}
+
+.form-wrapper {
+  width: 60%;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 40px;
+  border: 1px solid #eeefef;
+  border-radius: 3px;
+}
