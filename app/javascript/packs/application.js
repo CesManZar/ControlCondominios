@@ -20,4 +20,4 @@ require bootstrap-sprockets
 //= require jquery_ujs
 
 import 'bootstrap'
-import './src/application.scss'
+//import './src/application.scss'
